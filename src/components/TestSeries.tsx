@@ -18,8 +18,6 @@ const TestSeriesPage = () => {
   const [hasMore, setHasMore] = useState<boolean>(true);
   const [page, setPage] = useState<number>(1);
 
-  // Explicitly type the ref as HTMLDivElement
-  const observer = useRef<IntersectionObserver | null>(null);
   const lastTestSeriesElementRef = useRef<HTMLDivElement | null>(null); // Use RefObject<HTMLDivElement>
 
   const handleIntersection = (entries: IntersectionObserverEntry[]) => {
@@ -29,33 +27,31 @@ const TestSeriesPage = () => {
   };
 
   useEffect(() => {
-   const fetchTestSeries = async () => {
-  setLoading(true);
-  try {
-    // const response = await axios.get(
-    //   `http://localhost:3000/api/test-series?subject=${activeSubject}&page=${page}`
-    // );
+    const fetchTestSeries = async () => {
+      setLoading(true);
+      try {
+        // const response = await axios.get(
+        //   `http://localhost:3000/api/test-series?subject=${activeSubject}&page=${page}`
+        // );
 
-    const response = await axios.get(
-      `https://agrivisionbackend-1.onrender.com/api/test-series?subject=${activeSubject}&page=${page}`
-    );
-    console.log(response);
+        const response = await axios.get(
+          `https://agrivisionbackend-1.onrender.com/api/test-series?subject=${activeSubject}&page=${page}`
+        );
+        console.log(response);
 
-    // Check if the response contains the expected testSeries data
-    if (response.data && response.data.length === 0) {
-      setHasMore(false);
-    } else {
-      // Assuming response.data contains an array of objects with a testSeries field
-      const allTestSeries = response.data.flatMap((item: any) => item.testSeries); // Flatten the testSeries arrays
-      setTestSeries((prev) => [...prev, ...allTestSeries]);
-    }
-  } catch (error) {
-    console.error(error);
-  } finally {
-    setLoading(false);
-  }
-};
-
+        // Check if the response contains the expected testSeries data
+        if (response.data && response.data.length === 0) {
+          setHasMore(false);
+        } else {
+          const allTestSeries = response.data.flatMap((item: any) => item.testSeries); // Flatten the testSeries arrays
+          setTestSeries((prev) => [...prev, ...allTestSeries]);
+        }
+      } catch (error) {
+        console.error(error);
+      } finally {
+        setLoading(false);
+      }
+    };
 
     fetchTestSeries();
   }, [activeSubject, page]);
@@ -93,15 +89,15 @@ const TestSeriesPage = () => {
       </div>
 
       {/* Test Series List */}
-   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-6 mx-auto max-w-4xl">
-  {testSeries.map((test, index) => (
-    <TestCard
-      key={index}
-      test={test}
-      lastTestSeriesElementRef={testSeries.length === index + 1 ? lastTestSeriesElementRef : undefined}
-    />
-  ))}
-</div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-6 mx-auto max-w-4xl">
+        {testSeries.map((test, index) => (
+          <TestCard
+            key={index}
+            test={test}
+            lastTestSeriesElementRef={testSeries.length === index + 1 ? lastTestSeriesElementRef : undefined}
+          />
+        ))}
+      </div>
 
       {/* Loading Indicator */}
       {loading && (

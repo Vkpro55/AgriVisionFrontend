@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import axios, { AxiosError } from "axios";
+import axios from "axios";
 
 const LoginForm = () => {
   const [email, setEmail] = useState("");  // State to store email
@@ -12,20 +12,17 @@ const LoginForm = () => {
   const handleLogin = async () => {
     try {
       // Make a POST request to the backend login API
-      // const response = await axios.post("http://localhost:3000/api/auth/login", {
-
       const response = await axios.post("https://agrivisionbackend-1.onrender.com/api/auth/login", {
         email,
         password,
       });
-      
-      // console.log(response)
+
       // If login is successful (check if token exists in the response)
       if (response.data.token) {
         // Store the token (you might store it in localStorage or context)
         localStorage.setItem("authToken", response.data.token);
+        console.log(localStorage);
         
-        console.log(localStorage)
         // Navigate to the dashboard after successful login
         navigate("/dashboard");
       }
