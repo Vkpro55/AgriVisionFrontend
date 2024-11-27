@@ -28,7 +28,7 @@ const Navbar = () => {
 
       // const response = await axios.get("http://localhost:3000/api/user/profile", {
 
-      const response = await axios.get("https://agrivisionbackend-1.onrender.com/api/user/profile", {
+      const response = await axios.get("https://agrivisionbackend.onrender.com/api/user/profile", {
         headers: {
           Authorization: `Bearer ${token}`,
         },

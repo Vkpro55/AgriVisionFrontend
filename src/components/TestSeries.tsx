@@ -35,7 +35,7 @@ const TestSeriesPage = () => {
         // );
 
         const response = await axios.get(
-          `https://agrivisionbackend-1.onrender.com/api/test-series?subject=${activeSubject}&page=${page}`
+          `https://agrivisionbackend.onrender.com/api/test-series?subject=${activeSubject}&page=${page}`
         );
         console.log(response);
 

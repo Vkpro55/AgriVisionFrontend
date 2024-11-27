@@ -23,7 +23,7 @@ const Register: React.FC = () => {
     try {
       // const response = await axios.post('http://localhost:3000/api/auth/signup', {
 
-      const response = await axios.post('https://agrivisionbackend-1.onrender.com/api/auth/signup', {
+      const response = await axios.post('https://agrivisionbackend.onrender.com/api/auth/signup', {
         name,
         email,
         password,

@@ -12,7 +12,7 @@ const LoginForm = () => {
   const handleLogin = async () => {
     try {
       // Make a POST request to the backend login API
-      const response = await axios.post("https://agrivisionbackend-1.onrender.com/api/auth/login", {
+      const response = await axios.post("https://agrivisionbackend.onrender.com/api/auth/login", {
         email,
         password,
       });
