@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* For example, if you use any responsive classes, ensure they don't hide these components on small screens */
+@media (max-width: 768px) {
+  .sidebar {
+    display: block; /* Ensure sidebar stays visible on smaller screens */
+  }
+}
