@@ -5,15 +5,11 @@
 This section describes the implementation of login, signup, and logout functionalities using JWT for token-based authentication, bcrypt.js for password hashing, and Node.js as the backend framework. User data is stored in MongoDB for persistence.
 
 ```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+npm install express mongoose jsonwebtoken bcryptjs dotenv
+PORT=3000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+JWT_EXPIRATION=1h
 ```
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
