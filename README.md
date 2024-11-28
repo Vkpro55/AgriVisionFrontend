@@ -21,6 +21,7 @@ JWT_EXPIRATION=1h
 ![Screenshot (461)](https://github.com/user-attachments/assets/3e83a536-2287-4f15-8812-4d492486775c)
 
 ## Profile Modal
+-A modal pop-up is implemented for viewing user profiles. Displays user details in a visually appealing modal.
 
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
