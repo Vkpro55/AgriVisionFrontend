@@ -14,18 +14,19 @@ Save the provided JSON in a file named test_series.json.
 ```
 mongoimport --uri "your_mongodb_connection_string" --collection test_series --file test_series.json --jsonArray  
 ```
-
-Run the server in development mode:
-```
-  npm start
-```
-
+.env file
 ```js
 PORT=3000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
 JWT_EXPIRATION=1h
 ```
+
+Run the server in development mode:
+```
+  npm start
+```
+
 ### 2. API Endpoints
 - POST /api/auth/signup
 - POST /api/auth/login
