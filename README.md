@@ -46,16 +46,13 @@ const testSeriesData = [
 .......
 ```
 
+### 5. Sidebar Functionality: Test Series Section
+The application currently features a single active section in the sidebar: Test Series.
+- Displays a list of test series fetched from the MongoDB database.
+- Includes details such as title, description, difficulty, and price.
 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
+### 6. Expanding the ESLint configuration
 
 If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
