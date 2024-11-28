@@ -1,10 +1,8 @@
 # AgriVision App Next.js + Tailwind + Node.js + MomgoDB
 
-## Expanding the ESLint configuration
+## Authentication (Login, Signup, Logout) with JWT and bcrypt.js
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
+This section describes the implementation of login, signup, and logout functionalities using JWT for token-based authentication, bcrypt.js for password hashing, and Node.js as the backend framework. User data is stored in MongoDB for persistence.
 
 ```js
 export default tseslint.config({
