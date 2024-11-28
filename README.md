@@ -20,10 +20,13 @@ JWT_EXPIRATION=1h
 ![Screenshot (460)](https://github.com/user-attachments/assets/c4ff2b74-a9f6-4745-a45e-fe9c58fde3a6)
 ![Screenshot (461)](https://github.com/user-attachments/assets/3e83a536-2287-4f15-8812-4d492486775c)
 
-## Profile Modal
+## 3. Profile Modal
 -A modal pop-up is implemented for viewing user profiles. Displays user details in a visually appealing modal.
 ![Screenshot (462)](https://github.com/user-attachments/assets/38252d9e-9c28-4f23-8ec1-4d3056163ed1)
 
+
+### 4. Test Series Data: Dummy JSON for MongoDB Cloud
+This section provides the dummy JSON data structure for test_series, designed for seamless import into MongoDB Cloud. The data is structured in an array format, where each object represents a test series.
 
 ```
 const testSeriesData = [
