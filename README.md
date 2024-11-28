@@ -1,8 +1,8 @@
 # AgriVision App Next.js + Tailwind + Node.js + MomgoDB
 
-### Features of this Application:
+## Features of this Application:
 
-## 1. Authentication (Login, Signup, Logout) with JWT and bcrypt.js
+### 1. Authentication (Login, Signup, Logout) with JWT and bcrypt.js
 
 This section describes the implementation of login, signup, and logout functionalities using JWT for token-based authentication, bcrypt.js for password hashing, and Node.js as the backend framework. User data is stored in MongoDB for persistence.
 
