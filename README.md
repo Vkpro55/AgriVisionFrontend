@@ -25,6 +25,24 @@ JWT_EXPIRATION=1h
 ![Screenshot (462)](https://github.com/user-attachments/assets/38252d9e-9c28-4f23-8ec1-4d3056163ed1)
 
 
+```
+const testSeriesData = [
+  {
+    subject: "ThermoDynamics",
+    test_series:[
+     {
+      name: "THELT1"
+      questions: 41
+      totalMarks: 82
+      duration: "65 minutes"
+      language:"Hindi"
+      syllabus: "Second Law of Thermodynamics, Entropy, Thermodynamic Cycles"
+     }, .....
+    ]
+  },
+.......
+```
+
 
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
