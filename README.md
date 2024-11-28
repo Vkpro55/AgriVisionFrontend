@@ -1,6 +1,6 @@
 # AgriVision App Next.js + Tailwind + Node.js + MomgoDB
 
-Features of this Application:
+### Features of this Application:
 
 ## 1. Authentication (Login, Signup, Logout) with JWT and bcrypt.js
 
