@@ -50,6 +50,8 @@ const testSeriesData = [
 The application currently features a single active section in the sidebar: Test Series.
 - Displays a list of test series fetched from the MongoDB database.
 - Includes details such as title, description, difficulty, and price.
+  
+![Screenshot (463)](https://github.com/user-attachments/assets/ad1e7b25-dd1f-4355-b0c8-059ea41e3a2f)
 
 
 ### 6. Expanding the ESLint configuration
