@@ -1,4 +1,4 @@
-# AgriVision App Next.js + Tailwind + Node.js + MomgoDB
+# AgriVision App Next.js + Tailwind + Node.js + MongoDB
 
 ## Features of this Application:
 
@@ -22,6 +22,9 @@ JWT_EXPIRATION=1h
 
 ## Profile Modal
 -A modal pop-up is implemented for viewing user profiles. Displays user details in a visually appealing modal.
+![Screenshot (462)](https://github.com/user-attachments/assets/38252d9e-9c28-4f23-8ec1-4d3056163ed1)
+
+
 
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
