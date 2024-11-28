@@ -5,9 +5,17 @@
 ### 1. Authentication (Login, Signup, Logout) with JWT and bcrypt.js
 
 This section describes the implementation of login, signup, and logout functionalities using JWT for token-based authentication, bcrypt.js for password hashing, and Node.js as the backend framework. User data is stored in MongoDB for persistence.
+```js
+git clone https://github.com/your-username/your-repo-name.git  
+cd your-repo-name 
+npm install  
+```
+Save the provided JSON in a file named test_series.json.
+```
+mongoimport --uri "your_mongodb_connection_string" --collection test_series --file test_series.json --jsonArray  
+```
 
 ```js
-npm install express mongoose jsonwebtoken bcryptjs dotenv
 PORT=3000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
