@@ -15,6 +15,8 @@ JWT_EXPIRATION=1h
 - POST /api/auth/signup
 - POST /api/auth/login
 - POST /api/auth/logout
+![Screenshot (460)](https://github.com/user-attachments/assets/c4ff2b74-a9f6-4745-a45e-fe9c58fde3a6)
+![Screenshot (461)](https://github.com/user-attachments/assets/3e83a536-2287-4f15-8812-4d492486775c)
 
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
