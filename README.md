@@ -11,6 +11,8 @@ MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
 JWT_EXPIRATION=1h
 ```
+- API Endpoint: POST /api/auth/signup
+
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
