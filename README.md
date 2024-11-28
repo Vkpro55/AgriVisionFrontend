@@ -15,6 +15,11 @@ Save the provided JSON in a file named test_series.json.
 mongoimport --uri "your_mongodb_connection_string" --collection test_series --file test_series.json --jsonArray  
 ```
 
+Run the server in development mode:
+```
+  npm start
+```
+
 ```js
 PORT=3000
 MONGO_URI=your_mongodb_connection_string
