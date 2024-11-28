@@ -13,7 +13,7 @@ MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
 JWT_EXPIRATION=1h
 ```
-## API Endpoints
+### 2. API Endpoints
 - POST /api/auth/signup
 - POST /api/auth/login
 - POST /api/auth/logout
